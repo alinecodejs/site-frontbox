@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-  integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="crossorigin="anonymous" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
-    
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
-  <title>FrontBox</title>
+  <title>Frontbox</title>
 </head>
 <body>
-  <header>
-    <div class="menu-bg">
-      <div class="menu">
-        <div class="menu__logo">
-          <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-        </div> <!--.menu__logo-->
-        <nav>
-          <ul class="nav__list">
-            <li><a href="#somos" class="nav__link">Quem Somos</a></li>
-            <li><a href="#cursos" class="nav__link">Nossos Cursos</a></li>
-            <li><a href="#planos" class="nav_link">Planos</a></li>
-            <li><a href="#vantagens" class="nav__link">Vantagens</a></li>
-          </ul> <!--.nav__link-->
-        </nav> <!--Nav-->
-      </div> <!--menu-->
-    </div> <!--menu-bg-->
-      <h1 class="intro">Aprenda a programar,<br>um projeto por vez</h1>
+  <header id="header">
+    <!--logo-->
+    <a id="logo" href=""><img src="img/logo.png" alt="logo"></a> 
+    <!--Navegação-->
+    <nav id="nav" class="nav">
+      <button id="btn-menu">Menu
+        <span id="menu-hamb"></span>
+      </button>
+      <ul id="menu">
+        <li><a  href="#somos">Sobre</a></li>
+        <li><a href="#cursos">Nossos Cursos</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+      </ul>
+    </nav>
+      
   </header>
-  <hr>
   
-  <section class="somos" id="somos"> 
-    <h2 class="section__titulo">Quem Somos</h2>
+  <h1 class="intro">Aprenda a programar,<br> um projeto por vez!</h1>
+  <hr>
+
+  <section class="somos" id="somos">
+    <h2 class="section-titulo">Quem Somos</h2>
     <div class="somos-c">
-      <div class="somos-c__texto">
+      <div class="somos-c-texto">
         <p>
           Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu
           levo!
           Atirei o pau no gatis, per gatis num morreus. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Cevadis
-          im
-          ampola pa arma uma pindureta.
+          im ampola pa arma uma pindureta.
         </p>
-        <br>
         <p>
           Copo furadis é disculpa de bebadis, arcu quam euismod magna. Praesent vel viverra nisi. Mauris aliquet nunc non
           turpis
@@ -52,45 +50,141 @@
           lupuliz,
           matis, aguis e fermentis.
         </p>
-      </div> <!-- .somos-c__texto-->
-
-      <div class="somos-c__img">
-        <img src="img/somos.png" alt="Quem somos">
       </div>
-    </div> <!-- .somos-c-->
-  </section> <!-- somos-->
+      <div class="somos-img">
+        <img src="img/somos.png" alt="somos">
+      </div>
+    </div>
+  </section>
 
   <hr>
 
   <section class="cursos" id="cursos">
-    <h2 class="section__titulo">Nossos Cursos</h2>
+    <h2 class="section-titulo">Nossos Cursos</h2>
     <div class="cursos-c">
+      <div class="curso">
+        <img src="img/ai.png" alt="inteligencia artificial" class="curso-img">
+        <h3 class="curso-titulo">Inteligência Artificial</h3>
+        <p class="curso-descricao">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Mé faiz elementum girarzis, nisi eros vermeio.</p>
+      </div>
 
       <div class="curso">
-        <img src="img/ai.png" alt="Inteligência Artificial" class="curso__img">
-        <h3 class="curso__titulo">Inteligência Artificial</h3>
-        <p class="curso__descricao">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-        </div>
+        <img src="img/front.png" alt="inteligencia artificial" class="curso-img">
+        <h3 class="curso-titulo">Front-end</h3>
+        <p class="curso-descricao">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Mé faiz elementum girarzis, nisi eros vermeio.</p>
+      </div>
 
-        <div class="curso">
-          <img src="img/front.png" alt="Front-end" class="curso__img">
-          <h3 class="curso__titulo">Front-end</h3>
-          <p class="curso__descricao">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-        </div>
-
-        <div class="curso">
-          <img src="img/seguranca.png" alt="Segurança da Informação" class="curso__img">
-          <h3 class="curso__titulo">Segurança da Informação</h3>
-          <p class="curso__descricao">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-        </div>
-        </div>
+      <div class="curso">
+        <img src="img/seguranca.png" alt="segurança da informacao" class="curso-img">
+        <h3 class="curso-titulo">Inteligência Artificial</h3>
+        <p class="curso-descricao">Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Mé faiz elementum girarzis, nisi eros vermeio.</p>
+      </div>
     </div>
   </section>
 
-    <hr>
+  <hr>
 
+  <section class="planos" id="planos">
+    <h2 class="section-titulo">Planos</h2>
+    <div class="planos-c">
+      <div class="plano">
+        <h2 class="plano-titulo">Básico</h2>
+        <span class="plano-preco"><sup>R$</sup>25</span>
+        <hr class="plano-divisor">
+        <ul class="plano-lista">
+          <li class="plano-lista-item">1 mês de acesso ilimitado</li>
+          <li class="plano-lista-item">Acesso a todos os cursos</li>
+          <li class="plano-lista-item">Certificado de conclusão</li>
+        </ul>
+        <a href="#" class="plano-btn-comprar">Comprar</a>
+      </div>
+
+      <div class="plano">
+        <h2 class="plano-titulo">Premium</h2>
+        <span class="plano-preco"><sup>R$</sup>25</span>
+        <hr class="plano-divisor">
+        <ul class="plano-lista">
+          <li class="plano-lista-item">1 mês de acesso ilimitado</li>
+          <li class="plano-lista-item">Acesso a todos os cursos</li>
+          <li class="plano-lista-item">Certificado de conclusão</li>
+          <li class="plano-lista-item">Suporte</li>
+        </ul>
+        <a href="#" class="plano-btn-comprar">Comprar</a>
+      </div>
+
+      <div class="plano">
+        <h2 class="plano-titulo">Ultra</h2>
+        <span class="plano-preco"><sup>R$</sup>25</span>
+        <hr class="plano-divisor">
+        <ul class="plano-lista">
+          <li class="plano-lista-item">1 mês de acesso ilimitado</li>
+          <li class="plano-lista-item">Acesso a todos os cursos</li>
+          <li class="plano-lista-item">Certificado de conclusão</li>
+          <li class="plano-lista-item">Suporte</li>
+          <li class="plano-lista-item">Download das aulas</li>
+        </ul>
+        <a href="#" class="plano-btn-comprar">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="vantagens" class="vantagens">
+  
+    <div class="vantagem">
+      <h2 class="vantagem-titulo">Foco em projeto</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut ante blandit hendrerit. Aenean sit
+      amet nisi.</p></div>
+      
+      
+      <div class="vantagem">
+      <h2 class="vantagem-titulo">Portfólio incrível</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut
+      ante blandit hendrerit. Aenean sit
+      amet nisi.</p>
+      </div>
+      
+      <div class="vantagem">
+      <h2 class="vantagem-titulo">Aprenda fazendo</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut
+      ante blandit hendrerit. Aenean sit
+      amet nisi.</p>
+      </div>
+      
+      <div class="vantagem">
+      <h2 class="vantagem-titulo">Para todas as idades</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut
+      ante blandit hendrerit. Aenean sit
+      amet nisi.</p>
+      </div>
+      
+      <div class="vantagem">
+      <h2 class="vantagem-titulo">Atualizado</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut
+      ante blandit hendrerit. Aenean sit
+      amet nisi.</p>
+      </div>
+      
+      <div class="vantagem">
+      <h2 class="vantagem-titulo">Comece hoje</h2>
+      <p class="vantagem-descricao">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl
+      ut
+      ante blandit hendrerit. Aenean sit
+      amet nisi.</p></div>
+  </section>
+  
+  <hr>
+  
+
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-
 
 
